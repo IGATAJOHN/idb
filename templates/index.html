@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IDB Analytics LTD - Homepage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    /* static/css/style.css */
+.hero-section {
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+h2, h3, h4, h5 {
+  font-weight: 600;
+}
+
+.service-box {
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    transition: transform 0.2s;
+    flex: 1;
+    margin: 10px;
+    min-height: 250px;
+}
+
+.service-box:hover {
+    transform: scale(1.05);
+}
+.card:hover {
+          transform: scale(1.05);
+        }
+    
+#about p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+        .card:hover {
+          transform: scale(1.05);
+        }
+
+
+.service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.service-box h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.service-box p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+#services {
+    padding: 60px 0;
+}
+#services {
+    background-color: #f9f9f9;
+}
+.service-box i {
+    color: #007bff; /* Use your primary brand color */
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+/* General Styling for the Contact Section */
+#contact {
+    padding: 40px 0;
+}
+
+#contact h2 {
+    color: #0056b3;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Form Styling */
+form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+form .form-control {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    box-shadow: none;
+}
+
+form .form-control:focus {
+    border-color: #0056b3;
+    box-shadow: 0px 0px 5px rgba(0, 86, 179, 0.25);
+}
+
+form button {
+    background-color: #0056b3;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #003f7f;
+}
+
+/* Contact Details Styling */
+.map-container iframe {
+    border-radius: 10px;
+    width: 100%;
+    height: 300px;
+}
+
+h4.text-primary {
+    color: #0056b3;
+}
+
+p {
+    color: #6c757d;
+}
+
+
+
+@media (max-width: 768px) {
+    .service-box {
+        margin-bottom: 30px;
+    }
+    #contact .row {
+        flex-direction: column;
+    }
+
+    form,
+    .map-container {
+        margin-bottom: 20px;
+    }
+}
+#services h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+/* Service Box Styling */
+.service-box {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-box .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.service-box .card-text {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+/* Background color for Jumbotron Section */
+.company-overview {
+    background-color: #343a40;
+    color: #adb5bd;
+}
+
+/* Text Centering for the Company Overview */
+.company-overview h2 {
+    color: #ffffff;
+}
+
+.company-overview h3 {
+    color: #ffffff;
+}
+
+.company-overview p, .company-overview ul {
+    color: #adb5bd;
+}
+
+.company-overview ul li {
+    padding-left: 10px;
+}
+
+</style>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">
+            <i class="bi bi-bar-chart-fill" style="font-size: 2rem; margin-right: 10px;"></i>
+            IDB Analytics LTD
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active fw-bold" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold" href="#team">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section" style="background-image: url('static/img/ai.png'); background-size: cover; background-position: center; height: 100vh;">
+        <div class="container d-flex justify-content-center align-items-center text-center" style="height: 100%;">
+            <div class="text-white">
+                <h1 class="display-4">Solving Security and Environmental Challenges</h1>
+                <p class="lead" style="color: white;">Using cutting-edge technology to deliver innovative solutions.</p>
+                <a href="#services" class="btn btn-primary btn-lg">Explore Our Services</a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- About Us Section -->
+    <section id="about" class="bg-light py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">About Us</h2>
+            <p class="lead">At IDB Analytics LTD, we are dedicated to solving Africa’s critical security and environmental challenges using cutting-edge technology. With a diverse team of experts in AI, data science, and project management, we strive to make impactful contributions to the nation’s security and environmental sectors.</p>
+        </div>
+    </section>
+    <!-- Jumbotron Section with Dark Background -->
+<section class="company-overview py-5" style="background-color: #032c57;">
+    <div class="container">
+      <h2 class="text-center display-4 mb-4" style="color: #ffffff;">Company Overview</h2>
+      <p class="lead text-center" style="color: #adb5bd;">
+        At IDB Analytics LTD, we combine cutting-edge technology and innovation to solve Africa's critical security and environmental challenges.
+      </p>
+      <div class="row mt-5">
+        <div class="col-md-6">
+          <h3 style="color: #ffffff;"><i class="fas fa-bullseye"></i> Our Mission</h3>
+          <p style="color: #adb5bd;">
+            To provide innovative, AI-powered solutions that enhance security, protect the environment, and support sustainable development across Africa.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <h3 style="color: #ffffff;"><i class="fas fa-eye"></i> Our Vision</h3>
+          <p style="color: #adb5bd;">
+            To lead in deploying artificial intelligence and advanced technology to address Africa's most pressing challenges, making a lasting impact on communities and industries.
+          </p>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-12">
+          <h3 style="color: #ffffff;"><i class="fas fa-chart-line"></i> Key Areas of Focus</h3>
+          <ul class="list-unstyled" style="color: #adb5bd;">
+            <li><i class="fas fa-shield-alt"></i> AI-powered security and geospatial systems</li>
+            <li><i class="fas fa-globe-africa"></i> Environmental conservation and monitoring through technology</li>
+            <li><i class="fas fa-users"></i> Community engagement and project management for sustainable growth</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Services Section Using Cards -->
+  <section id="services" class="py-5" style="background-color: #f8f9fa;">
+    <div class="container">
+      <h2 class="text-center mb-5" style="color: #0056b3;">Our Services</h2>
+      <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="card h-100 service-box">
+            <div class="card-body text-center">
+              <h5 class="card-title" style="color: #0056b3;">AI-powered Geofencing Systems</h5>
+              <p class="card-text">Leveraging advanced AI technologies to secure and monitor critical areas.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 service-box">
+            <div class="card-body text-center">
+              <h5 class="card-title" style="color: #0056b3;">Community Engagement</h5>
+              <p class="card-text">Driving awareness and fostering relationships with local communities and stakeholders.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 service-box">
+            <div class="card-body text-center">
+              <h5 class="card-title" style="color: #0056b3;">Project Management</h5>
+              <p class="card-text">Managing complex projects with expert coordination and resource allocation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+      <section class="what-we-do py-5" style="background-color: #e9ecef;">
+        <div class="container">
+          <h2 class="text-center display-4 mb-4" style="color: #0056b3;">What We Do</h2>
+          <p class="lead text-center" style="color: #6c757d;">Our approach combines advanced AI technology, community engagement, and strategic project management to address Africa's critical challenges.</p>
+          <div class="row mt-5">
+            <div class="col-md-4">
+              <div class="card shadow-lg border-0 h-100" style="transition: transform 0.2s;">
+                <div class="card-body">
+                  <h4 style="color: #0056b3;"><i class="fas fa-robot"></i> AI and Machine Learning</h4>
+                  <p>We develop state-of-the-art machine learning models and AI algorithms to create predictive solutions for enhanced security and environmental monitoring.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card shadow-lg border-0 h-100" style="transition: transform 0.2s;">
+                <div class="card-body">
+                  <h4 style="color: #0056b3;"><i class="fas fa-map-marked-alt"></i> Geospatial Technology</h4>
+                  <p>Our systems monitor and analyze environmental data, offering insights for sustainable land use, resource management, and conservation efforts.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card shadow-lg border-0 h-100" style="transition: transform 0.2s;">
+                <div class="card-body">
+                  <h4 style="color: #0056b3;"><i class="fas fa-users"></i> Community-Focused Solutions</h4>
+                  <p>We collaborate with local communities and stakeholders to ensure that our tech-driven solutions provide meaningful and lasting benefits.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+     
+      <section class="team py-5" style="background-color: #f8f9fa;">
+        <div class="container">
+          <h2 class="text-center display-4 mb-5" style="color: #0056b3;">Our Team</h2>
+          <div class="row">
+            <!-- Team Member 1 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card shadow-lg border-0 h-100" style="transition: transform 0.3s;">
+                <img src="{{url_for('static',filename='img/bozimo.jpg')}}" class="card-img-top" alt="Team Member 1">
+                <div class="card-body">
+                  <h4 style="color: #0056b3;">Joseph Bozimo</h4>
+                  <h6 class="text-muted">AI & Machine Learning Specialist</h6>
+                  <p class="mt-3">Expertise in developing machine learning models for security and environmental systems.</p>
+                  <ul class="list-unstyled">
+                    <li><i class="fas fa-check-circle"></i> Develops predictive algorithms</li>
+                    <li><i class="fas fa-check-circle"></i> Leads AI-driven projects</li>
+                  </ul>
+                  <a href="" class="btn btn-primary mt-3">Read More</a>
+                </div>
+              </div>
+            </div>
+            <!-- Team Member 2 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card shadow-lg border-0 h-100" style="transition: transform 0.3s;">
+                <img src="{{url_for('static',filename='img/jane.jpg')}}" class="card-img-top" alt="Team Member 2">
+                <div class="card-body">
+                  <h4 style="color: #0056b3;">Marian</h4>
+                  <h6 class="text-muted">COO</h6>
+                  <p class="mt-3">4 Years in Product Design and Management.</p>
+                  <ul class="list-unstyled">
+                    <li><i class="fas fa-check-circle"></i> Manages project timelines</li>
+                    <li><i class="fas fa-check-circle"></i> Ensures team collaboration</li>
+                  </ul>
+                  <a href="#" class="btn btn-primary mt-3">Read More</a>
+                </div>
+              </div>
+            </div>
+            <!-- Team Member 3 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card shadow-lg border-0 h-100" style="transition: transform 0.3s;">
+                <img src="{{url_for('static',filename='img/ruth.jpg')}}" class="card-img-top" alt="Team Member 3">
+                <div class="card-body">
+                  <h4 style="color: #0056b3;">Blessing</h4>
+                  <h6 class="text-muted">Marketing Head</h6>
+                  <p class="mt-3">7 Years in Growth Digital Marketing.</p>
+                  <ul class="list-unstyled">
+                    <li><i class="fas fa-check-circle"></i> Leads community projects</li>
+                    <li><i class="fas fa-check-circle"></i> Fosters partnerships</li>
+                  </ul>
+                  <a href="" class="btn btn-primary mt-3">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+<section class="founder-note py-5" style="background-color: #e9ecef;">
+    <div class="container">
+      <h2 class="text-center display-4 mb-5" style="color: #0056b3;">A Note from Our Founder</h2>
+      <blockquote class="blockquote text-center">
+        <p class="mb-0 lead">"At IDB Analytics, we believe in the power of technology to transform Africa's security and environmental landscape. Our team is dedicated to making a difference through AI and innovation."</p>
+        <footer class="blockquote-footer mt-3">Joseph Edisemi Bozimo, <cite title="Founder & CEO">Founder & CEO</cite></footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <section class="services py-5">
+    <div class="container">
+      <h2 class="text-center display-4 mb-5" style="color: #0056b3;">Our Services</h2>
+      <div class="row">
+        <!-- Service 1 -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card shadow-lg border-0 h-100" style="transition: transform 0.3s;">
+            <div class="card-body">
+              <h4 style="color: #0056b3;"><i class="fas fa-map-marked-alt"></i> AI-powered Geofencing Systems</h4>
+              <p>We use advanced AI algorithms to secure areas and monitor movements with geofencing technology.</p>
+              <a href="service-details.html" class="btn btn-primary mt-3">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Service 2 -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card shadow-lg border-0 h-100" style="transition: transform 0.3s;">
+            <div class="card-body">
+              <h4 style="color: #0056b3;"><i class="fas fa-users"></i> Project Management & Community Engagement</h4>
+              <p>We manage projects and collaborate with local communities to deliver impactful solutions.</p>
+              <a href="service-details.html" class="btn btn-primary mt-3">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Service 3 -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card shadow-lg border-0 h-100" style="transition: transform 0.3s;">
+            <div class="card-body">
+              <h4 style="color: #0056b3;"><i class="fas fa-seedling"></i> AI & Data Science for Environmental Management</h4>
+              <p>We leverage AI and data science to drive sustainable environmental management solutions.</p>
+              <a href="service-details.html" class="btn btn-primary mt-3">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="py-5" style="background-color: #f8f9fa;">
+    <div class="container">
+      <h2 class="text-center mb-5" style="color: #0056b3;">Contact Us</h2>
+      <div class="row">
+        <!-- Contact Form -->
+        <div class="col-md-6 mb-4">
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="Your message..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+          </form>
+        </div>
+        <!-- Contact Details -->
+        <div class="col-md-6">
+          <h4 class="text-primary">Our Office</h4>
+          <p>Email: <a href="mailto:info@idbanalytics.com">info@idbanalytics.com</a></p>
+          <p>Phone: +234 9067555049</p>
+          <p>Address: Coscharis Plaza 2nd floor beside GTbank area3 Garki, Abuja , Abuja, Nigeria</p>
+          <div class="map-container mt-4">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345090736!2d144.95373631531643!3d-37.816279979751675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577df6f588de269!2sVictoria%20St%2C%20Melbourne%20VIC%203005%2C%20Australia!5e0!3m2!1sen!2sus!4v1602491513142!5m2!1sen!2sus"
+              width="100%" height="300" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <footer class="footer bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <!-- Quick Links -->
+        <div class="col-md-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="services.html" class="text-white">Services</a></li>
+            <li><a href="about.html" class="text-white">About Us</a></li>
+            <li><a href="contact.html" class="text-white">Contact</a></li>
+          </ul>
+        </div>
+        <!-- Social Media -->
+        <div class="col-md-4">
+          <h5>Follow Us</h5>
+          <a href="#" class="text-white mr-2"><i class="fab fa-linkedin"></i></a>
+          <a href="#" class="text-white mr-2"><i class="fab fa-twitter"></i></a>
+        </div>
+        <!-- Legal Links -->
+        <div class="col-md-4">
+          <h5>Legal</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Privacy Policy</a></li>
+            <li><a href="#" class="text-white">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
